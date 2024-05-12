@@ -1,0 +1,476 @@
+{
+	"info": {
+		"_postman_id": "9447c389-45c1-4292-b1fb-eff675049d94",
+		"name": "AerTrip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14423028",
+		"_collection_link": "https://blue-crescent-905536.postman.co/workspace/Klay-Workspace~cff80933-fa61-4286-8ae7-c0921d7237d8/collection/14423028-9447c389-45c1-4292-b1fb-eff675049d94?action=share&source=collection_link&creator=14423028"
+	},
+	"item": [
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aertrip",
+						"web",
+						"admin",
+						"employee",
+						"delete-employee"
+					],
+					"query": [
+						{
+							"key": "employee_id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"aertrip",
+								"web",
+								"admin",
+								"employee",
+								"delete-employee"
+							],
+							"query": [
+								{
+									"key": "employee_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 22:34:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "X-Debug-Tag",
+							"value": "664144091b2c2"
+						},
+						{
+							"key": "X-Debug-Duration",
+							"value": "272"
+						},
+						{
+							"key": "X-Debug-Link",
+							"value": "/aertrip/web/debug/default/view?tag=664144091b2c2"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Employee and associated records deleted successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create-employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\": 10,\r\n    \"employee_name\": \"Santosh Doe\",\r\n    \"employee_email\": \"john.doe@example.com\",\r\n    \"department\": {\r\n        \"department_id\": 2,\r\n        \"department_name\": \"IT Department\"\r\n    },\r\n    \"address\": [\r\n        {\r\n            \"address_id\": 1,\r\n            \"address_line_1\": \"123 Main St\",\r\n            \"city\": \"New York\",\r\n            \"state\": \"MAH\",\r\n            \"country\": \"USA\",\r\n            \"postal_code\": \"10001\"\r\n        }\r\n    ],\r\n    \"contact_number\": [\r\n        {\r\n            \"contact_id\": 1,\r\n            \"contact_number\": \"77777\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/aertrip/web/admin/employee/create-employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aertrip",
+						"web",
+						"admin",
+						"employee",
+						"create-employee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create-employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 10,\r\n    \"employee_name\": \"Santosh Doe\",\r\n    \"employee_email\": \"john.doe@example.com\",\r\n    \"department\": {\r\n        \"department_id\": 2,\r\n        \"department_name\": \"IT Department\"\r\n    },\r\n    \"address\": [\r\n        {\r\n            \"address_id\": 1,\r\n            \"address_line_1\": \"123 Main St\",\r\n            \"city\": \"New York\",\r\n            \"state\": \"MAH\",\r\n            \"country\": \"USA\",\r\n            \"postal_code\": \"10001\"\r\n        }\r\n    ],\r\n    \"contact_number\": [\r\n        {\r\n            \"contact_id\": 1,\r\n            \"contact_number\": \"77777\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/aertrip/web/admin/employee/create-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"aertrip",
+								"web",
+								"admin",
+								"employee",
+								"create-employee"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 22:23:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Debug-Tag",
+							"value": "664141738ba36"
+						},
+						{
+							"key": "X-Debug-Duration",
+							"value": "388"
+						},
+						{
+							"key": "X-Debug-Link",
+							"value": "/aertrip/web/debug/default/view?tag=664141738ba36"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Employee and related records created successfully.\",\n    \"employee\": {\n        \"employee_id\": 10,\n        \"department_id\": 2,\n        \"employee_name\": \"Santosh Doe\",\n        \"employee_email\": \"john.doe@example.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update-employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\": 10,\r\n    \"employee_name\": \"Santosh Doe\",\r\n    \"employee_email\": \"john.doe@example.com\",\r\n    \"department\": {\r\n        \"department_id\": 2,\r\n        \"department_name\": \"IT Department\"\r\n    },\r\n    \"address\": [\r\n        {\r\n            \"address_id\": 1,\r\n            \"address_line_1\": \"123 Main St\",\r\n            \"city\": \"New York\",\r\n            \"state\": \"MAH\",\r\n            \"country\": \"USA\",\r\n            \"postal_code\": \"10001\"\r\n        }\r\n    ],\r\n    \"contact_number\": [\r\n        {\r\n            \"contact_id\": 1,\r\n            \"contact_number\": \"77777\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/aertrip/web/admin/employee/update-employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aertrip",
+						"web",
+						"admin",
+						"employee",
+						"update-employee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update-employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\": 10,\r\n    \"employee_name\": \"Santosh Doe\",\r\n    \"employee_email\": \"john.doe@example.com\",\r\n    \"department\": {\r\n        \"department_id\": 2,\r\n        \"department_name\": \"IT Department\"\r\n    },\r\n    \"address\": [\r\n        {\r\n            \"address_id\": 1,\r\n            \"address_line_1\": \"123 Main St\",\r\n            \"city\": \"New York\",\r\n            \"state\": \"MAH\",\r\n            \"country\": \"USA\",\r\n            \"postal_code\": \"10001\"\r\n        }\r\n    ],\r\n    \"contact_number\": [\r\n        {\r\n            \"contact_id\": 1,\r\n            \"contact_number\": \"77777\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/aertrip/web/admin/employee/update-employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"aertrip",
+								"web",
+								"admin",
+								"employee",
+								"update-employee"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 22:19:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Debug-Tag",
+							"value": "6641407c68e27"
+						},
+						{
+							"key": "X-Debug-Duration",
+							"value": "6,085"
+						},
+						{
+							"key": "X-Debug-Link",
+							"value": "/aertrip/web/debug/default/view?tag=6641407c68e27"
+						},
+						{
+							"key": "Content-Length",
+							"value": "181"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Employee data updated successfully.\",\n    \"employee\": {\n        \"employee_id\": 1,\n        \"department_id\": 2,\n        \"employee_name\": \"Santosh Doe\",\n        \"employee_email\": \"john.doe@example.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Employee",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/aertrip/web/admin/employee/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"aertrip",
+						"web",
+						"admin",
+						"employee",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Employee",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/aertrip/web/admin/employee/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"aertrip",
+								"web",
+								"admin",
+								"employee",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 21:24:29 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "X-Debug-Tag",
+							"value": "6641338d39010"
+						},
+						{
+							"key": "X-Debug-Duration",
+							"value": "82"
+						},
+						{
+							"key": "X-Debug-Link",
+							"value": "/aertrip/web/debug/default/view?tag=6641338d39010"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2503"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"employee_id\": 1,\n        \"department_id\": 1,\n        \"employee_name\": \"sita ram\",\n        \"employee_email\": \"sita.ram@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 1,\n            \"department_name\": \"Marketing\"\n        },\n        \"address\": [\n            {\n                \"address_id\": 1,\n                \"employee_id\": 1,\n                \"address_line_1\": \"123 Main Rd\",\n                \"address_line_2\": null,\n                \"city\": \"Mumbai\",\n                \"state\": \"NY\",\n                \"country\": \"USA\",\n                \"postal_code\": \"210099\"\n            }\n        ],\n        \"contact_number\": [\n            {\n                \"contact_id\": 1,\n                \"employee_id\": 1,\n                \"contact_number\": \"1234567890\"\n            }\n        ]\n    },\n    {\n        \"employee_id\": 2,\n        \"department_id\": 2,\n        \"employee_name\": \"ram singh\",\n        \"employee_email\": \"ram.singh@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 2,\n            \"department_name\": \"Sales\"\n        },\n        \"address\": [\n            {\n                \"address_id\": 2,\n                \"employee_id\": 2,\n                \"address_line_1\": \"456 Elm Rd\",\n                \"address_line_2\": null,\n                \"city\": \"Pune\",\n                \"state\": \"CA\",\n                \"country\": \"USA\",\n                \"postal_code\": \"900013\"\n            }\n        ],\n        \"contact_number\": [\n            {\n                \"contact_id\": 2,\n                \"employee_id\": 2,\n                \"contact_number\": \"9876543210\"\n            }\n        ]\n    },\n    {\n        \"employee_id\": 3,\n        \"department_id\": 3,\n        \"employee_name\": \"riya yadav\",\n        \"employee_email\": \"riya.yadav@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 3,\n            \"department_name\": \"Human Resources\"\n        },\n        \"address\": [\n            {\n                \"address_id\": 3,\n                \"employee_id\": 3,\n                \"address_line_1\": \"789 Oak Rd\",\n                \"address_line_2\": null,\n                \"city\": \"Thane\",\n                \"state\": \"IL\",\n                \"country\": \"USA\",\n                \"postal_code\": \"606013\"\n            }\n        ],\n        \"contact_number\": [\n            {\n                \"contact_id\": 3,\n                \"employee_id\": 3,\n                \"contact_number\": \"5551234567\"\n            }\n        ]\n    },\n    {\n        \"employee_id\": 4,\n        \"department_id\": 1,\n        \"employee_name\": \"rohit sharma\",\n        \"employee_email\": \"rohit.sharma@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 1,\n            \"department_name\": \"Marketing\"\n        },\n        \"address\": [\n            {\n                \"address_id\": 4,\n                \"employee_id\": 4,\n                \"address_line_1\": \"101 Pine Rd\",\n                \"address_line_2\": null,\n                \"city\": \"Varanasi\",\n                \"state\": \"CA\",\n                \"country\": \"USA\",\n                \"postal_code\": \"941014\"\n            }\n        ],\n        \"contact_number\": [\n            {\n                \"contact_id\": 4,\n                \"employee_id\": 4,\n                \"contact_number\": \"4445556666\"\n            }\n        ]\n    },\n    {\n        \"employee_id\": 5,\n        \"department_id\": 4,\n        \"employee_name\": \"sarita yadav\",\n        \"employee_email\": \"sarita.yadav@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 4,\n            \"department_name\": \"Finance\"\n        },\n        \"address\": [\n            {\n                \"address_id\": 5,\n                \"employee_id\": 5,\n                \"address_line_1\": \"202 Maple Rd\",\n                \"address_line_2\": null,\n                \"city\": \"Kolkata\",\n                \"state\": \"TX\",\n                \"country\": \"USA\",\n                \"postal_code\": \"770011\"\n            }\n        ],\n        \"contact_number\": [\n            {\n                \"contact_id\": 5,\n                \"employee_id\": 5,\n                \"contact_number\": \"7778889999\"\n            }\n        ]\n    },\n    {\n        \"employee_id\": 6,\n        \"department_id\": 2,\n        \"employee_name\": \"rita yadav\",\n        \"employee_email\": \"rita@gmail.com\",\n        \"department\": {\n            \"department_id\": 2,\n            \"department_name\": \"Sales\"\n        },\n        \"address\": [],\n        \"contact_number\": []\n    },\n    {\n        \"employee_id\": 7,\n        \"department_id\": 2,\n        \"employee_name\": \"Santosh Mallah\",\n        \"employee_email\": \"ram.singh@orgconnect.com\",\n        \"department\": {\n            \"department_id\": 2,\n            \"department_name\": \"Sales\"\n        },\n        \"address\": [],\n        \"contact_number\": []\n    }\n]"
+				}
+			]
+		}
+	]
+}
