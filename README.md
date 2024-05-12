@@ -42,6 +42,20 @@ This guide provides step-by-step instructions to set up and run the OrgConnect p
 By following these steps, you'll have the OrgConnect project set up and ready to use on your local machine. Enjoy exploring the features and functionalities of the application for seamless employee management within your organization.
 
 
+# API
+
+1.  For setup api service go to the api folder of project and copy and pest it into xamp server htdocs folder.
+2.  In api folder postman api collection available please import it into postman for testing api
+
+![image](https://github.com/saritasy/aertrip/assets/109311562/59d00a89-0849-4f8b-86ab-0b3df4945df4)
+
+![image](https://github.com/saritasy/aertrip/assets/109311562/bd216acb-cf4a-43aa-b42a-9ec6719cadb1)
+
+![image](https://github.com/saritasy/aertrip/assets/109311562/c8d341b1-1e93-4c6b-95f9-84453948bf81)
+
+![image](https://github.com/saritasy/aertrip/assets/109311562/dbadcdd5-a277-4847-8f90-082353e80774)
+
+
 ### Screen Shot
 
 ![image](https://github.com/saritasy/aertrip/assets/109311562/d76d3725-307b-44ed-9704-644d40f9cc06)
@@ -49,5 +63,7 @@ By following these steps, you'll have the OrgConnect project set up and ready to
 ![image](https://github.com/saritasy/aertrip/assets/109311562/1bf7a8f5-76d2-4977-bdb8-aff64e73d367)
 
 ![image](https://github.com/saritasy/aertrip/assets/109311562/013a6742-723b-4761-befb-3497ad1fbbae)
+
+
 
 
