@@ -44,8 +44,8 @@ By following these steps, you'll have the OrgConnect project set up and ready to
 
 # API
 
-1.  For setup api service go to the api folder of project and copy and pest it into xamp server htdocs folder.
-2.  In api folder postman api collection available please import it into postman for testing api
+1. To set up the API service, navigate to the 'api' folder of the project and copy it into the 'htdocs' folder of your XAMPP server.
+2. Inside the 'api' folder, you'll find a Postman API collection. Please import this collection into Postman for testing the API.
 
 ![image](https://github.com/saritasy/aertrip/assets/109311562/59d00a89-0849-4f8b-86ab-0b3df4945df4)
 
