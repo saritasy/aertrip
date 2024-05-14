@@ -47,7 +47,7 @@ By following these steps, you'll have the OrgConnect project set up and ready to
 1. To set up the API service, navigate to the 'api' folder of the project and copy it into the 'htdocs' folder of your XAMPP server.
 2. Inside the 'api' folder, you'll find a Postman API collection. Please import this collection into Postman for testing the API.
 
-http://localhost/aertrip/web/admin/employee/list
+GET http://localhost/aertrip/web/admin/employee/list
 
 # Response
 
@@ -226,7 +226,7 @@ http://localhost/aertrip/web/admin/employee/list
 ```
 
 
-http://localhost/aertrip/web/admin/employee/update-employee
+POST http://localhost/aertrip/web/admin/employee/update-employee
 
 # Request
 
@@ -274,7 +274,7 @@ http://localhost/aertrip/web/admin/employee/update-employee
 ```
 
 
-http://localhost/aertrip/web/admin/employee/create-employee
+POST http://localhost/aertrip/web/admin/employee/create-employee
 
 # Request
 
@@ -321,7 +321,7 @@ http://localhost/aertrip/web/admin/employee/create-employee
 ```
 
 
-http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10
+POST http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10
 
 # Response
 
