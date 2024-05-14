@@ -47,6 +47,293 @@ By following these steps, you'll have the OrgConnect project set up and ready to
 1. To set up the API service, navigate to the 'api' folder of the project and copy it into the 'htdocs' folder of your XAMPP server.
 2. Inside the 'api' folder, you'll find a Postman API collection. Please import this collection into Postman for testing the API.
 
+http://localhost/aertrip/web/admin/employee/list
+
+# Response
+
+```json
+[
+    {
+        "employee_id": 1,
+        "department_id": 1,
+        "employee_name": "sita ram",
+        "employee_email": "sita.ram@orgconnect.com",
+        "department": {
+            "department_id": 1,
+            "department_name": "Marketing"
+        },
+        "address": [
+            {
+                "address_id": 1,
+                "employee_id": 1,
+                "address_line_1": "123 Main Rd",
+                "address_line_2": null,
+                "city": "Mumbai",
+                "state": "NY",
+                "country": "USA",
+                "postal_code": "210099"
+            }
+        ],
+        "contact_number": [
+            {
+                "contact_id": 1,
+                "employee_id": 1,
+                "contact_number": "1234567890"
+            }
+        ]
+    },
+    {
+        "employee_id": 2,
+        "department_id": 2,
+        "employee_name": "ram singh",
+        "employee_email": "ram.singh@orgconnect.com",
+        "department": {
+            "department_id": 2,
+            "department_name": "Sales"
+        },
+        "address": [
+            {
+                "address_id": 2,
+                "employee_id": 2,
+                "address_line_1": "456 Elm Rd",
+                "address_line_2": null,
+                "city": "Pune",
+                "state": "CA",
+                "country": "USA",
+                "postal_code": "900013"
+            }
+        ],
+        "contact_number": [
+            {
+                "contact_id": 2,
+                "employee_id": 2,
+                "contact_number": "9876543210"
+            }
+        ]
+    },
+    {
+        "employee_id": 3,
+        "department_id": 3,
+        "employee_name": "riya yadav",
+        "employee_email": "riya.yadav@orgconnect.com",
+        "department": {
+            "department_id": 3,
+            "department_name": "Human Resources"
+        },
+        "address": [
+            {
+                "address_id": 3,
+                "employee_id": 3,
+                "address_line_1": "789 Oak Rd",
+                "address_line_2": null,
+                "city": "Thane",
+                "state": "IL",
+                "country": "USA",
+                "postal_code": "606013"
+            }
+        ],
+        "contact_number": [
+            {
+                "contact_id": 3,
+                "employee_id": 3,
+                "contact_number": "5551234567"
+            }
+        ]
+    },
+    {
+        "employee_id": 4,
+        "department_id": 1,
+        "employee_name": "rohit sharma",
+        "employee_email": "rohit.sharma@orgconnect.com",
+        "department": {
+            "department_id": 1,
+            "department_name": "Marketing"
+        },
+        "address": [
+            {
+                "address_id": 4,
+                "employee_id": 4,
+                "address_line_1": "101 Pine Rd",
+                "address_line_2": null,
+                "city": "Varanasi",
+                "state": "CA",
+                "country": "USA",
+                "postal_code": "941014"
+            }
+        ],
+        "contact_number": [
+            {
+                "contact_id": 4,
+                "employee_id": 4,
+                "contact_number": "4445556666"
+            }
+        ]
+    },
+    {
+        "employee_id": 5,
+        "department_id": 4,
+        "employee_name": "sarita yadav",
+        "employee_email": "sarita.yadav@orgconnect.com",
+        "department": {
+            "department_id": 4,
+            "department_name": "Finance"
+        },
+        "address": [
+            {
+                "address_id": 5,
+                "employee_id": 5,
+                "address_line_1": "202 Maple Rd",
+                "address_line_2": null,
+                "city": "Kolkata",
+                "state": "TX",
+                "country": "USA",
+                "postal_code": "770011"
+            }
+        ],
+        "contact_number": [
+            {
+                "contact_id": 5,
+                "employee_id": 5,
+                "contact_number": "7778889999"
+            }
+        ]
+    },
+    {
+        "employee_id": 6,
+        "department_id": 2,
+        "employee_name": "rita yadav",
+        "employee_email": "rita@gmail.com",
+        "department": {
+            "department_id": 2,
+            "department_name": "Sales"
+        },
+        "address": [],
+        "contact_number": []
+    },
+    {
+        "employee_id": 7,
+        "department_id": 2,
+        "employee_name": "Santosh Mallah",
+        "employee_email": "ram.singh@orgconnect.com",
+        "department": {
+            "department_id": 2,
+            "department_name": "Sales"
+        },
+        "address": [],
+        "contact_number": []
+    }
+]
+```
+
+
+http://localhost/aertrip/web/admin/employee/update-employee
+
+# Request
+
+```json
+{
+    "employee_id": 10,
+    "employee_name": "Santosh Doe",
+    "employee_email": "john.doe@example.com",
+    "department": {
+        "department_id": 2,
+        "department_name": "IT Department"
+    },
+    "address": [
+        {
+            "address_id": 1,
+            "address_line_1": "123 Main St",
+            "city": "New York",
+            "state": "MAH",
+            "country": "USA",
+            "postal_code": "10001"
+        }
+    ],
+    "contact_number": [
+        {
+            "contact_id": 1,
+            "contact_number": "77777"
+        }
+    ]
+}
+```
+
+# Response
+
+```json
+{
+    "success": true,
+    "message": "Employee data updated successfully.",
+    "employee": {
+        "employee_id": 1,
+        "department_id": 2,
+        "employee_name": "Santosh Doe",
+        "employee_email": "john.doe@example.com"
+    }
+}
+```
+
+
+http://localhost/aertrip/web/admin/employee/create-employee
+
+# Request
+
+```json
+{
+    "employee_id": 10,
+    "employee_name": "Santosh Doe",
+    "employee_email": "john.doe@example.com",
+    "department": {
+        "department_id": 2,
+        "department_name": "IT Department"
+    },
+    "address": [
+        {
+            "address_id": 1,
+            "address_line_1": "123 Main St",
+            "city": "New York",
+            "state": "MAH",
+            "country": "USA",
+            "postal_code": "10001"
+        }
+    ],
+    "contact_number": [
+        {
+            "contact_id": 1,
+            "contact_number": "77777"
+        }
+    ]
+}
+
+```
+# Response
+```json
+{
+    "success": true,
+    "message": "Employee and related records created successfully.",
+    "employee": {
+        "employee_id": 10,
+        "department_id": 2,
+        "employee_name": "Santosh Doe",
+        "employee_email": "john.doe@example.com"
+    }
+}
+```
+
+
+http://localhost/aertrip/web/admin/employee/delete-employee?employee_id=10
+
+# Response
+
+```json
+{
+    "success": true,
+    "message": "Employee and associated records deleted successfully."
+}
+```
+
+
+
 ![image](https://github.com/saritasy/aertrip/assets/109311562/59d00a89-0849-4f8b-86ab-0b3df4945df4)
 
 ![image](https://github.com/saritasy/aertrip/assets/109311562/bd216acb-cf4a-43aa-b42a-9ec6719cadb1)
